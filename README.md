@@ -20,3 +20,12 @@ starting 0129 ~
 ```
 > Food 함수인자에 모두 props로 전달된다.
 * function(props) = function( { } )
+> (props.fav) = ({fav})
+* .map()
+> map()은 function을 취해서 그 function을 만든 array의 각 item 에 적용해준다.
+```
+Array friends = [a,b,c,d]
+friends.map(function(current) { console.log(current); return 0 })
+[result]
+0,0,0,0
+```
