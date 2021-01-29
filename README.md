@@ -19,3 +19,4 @@ starting 0129 ~
 <Food fav="kimchi" taste="good" price="cheap" />
 ```
 > Food 함수인자에 모두 props로 전달된다.
+* function(props) = function( { } )
