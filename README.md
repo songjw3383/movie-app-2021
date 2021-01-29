@@ -11,4 +11,5 @@ starting 0129 ~
 
 * react application은 하나의 component만을 랜더링함
 * component의 재사용성 
-> ex) <Food fav="kimchi" /> food 컴포넌트에 fav라는 이름의 속성을 김치라는 값으로 준 것이다.
+> code ex) <Food fav="kimchi" /> food 
+컴포넌트에 fav라는 이름의 속성을 김치라는 값으로 준 것이다.
