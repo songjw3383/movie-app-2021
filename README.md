@@ -19,13 +19,18 @@ starting 0129 ~
 <Food fav="kimchi" taste="good" price="cheap" />
 ```
 > Food 함수인자에 모두 props로 전달된다.
+
 * function(props) = function( { } )
 > (props.fav) = ({fav})
+
 * .map()
-> map()은 function을 취해서 그 function을 만든 array의 각 item 에 적용해준다.
+> map()은 function을 취해서 그 function을 만든 array의 각 item 에 모두 적용해준다.
 ```
 Array friends = [a,b,c,d]
-friends.map(function(current) { console.log(current); return 0 })
+friends.map(current =>( { console.log(current); return 0 })
+// 여기서 current는 단지 오브젝트일뿐, 큰 의미없음
 [result]
-0,0,0,0
+[0,0,0,0]
 ```
+
+* React에서는 각자의 고유의 키값이 필요
