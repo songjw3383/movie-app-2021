@@ -15,3 +15,7 @@ starting 0129 ~
 <Food fav="kimchi" />
 ```
 > food 컴포넌트에 fav라는 이름의 속성을 김치라는 값으로 준 것이다.
+```
+<Food fav="kimchi" taste="good" price="cheap" />
+```
+> Food 함수인자에 모두 props로 전달된다.
