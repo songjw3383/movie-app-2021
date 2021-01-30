@@ -4,7 +4,7 @@ React JS Foundamentals Course
 starting 0129 ~
 
 ## 0129
-### JSX & PROPS
+### 1. JSX & PROPS
 * Component -> HTML 을 반환하는 함수 
 * JSX 는 React의 유일한 개념
 -> jsx는 자바스크립트안의 HTML (사용: < />)
@@ -44,7 +44,7 @@ Food.propTypes = {
   }
 ```
 
-### STATE
+### 2. STATE
 * state 는 동적인 데이터를 다룰때 필요
 * class component 는 함수(function)이 아니기때문에 return 을 쓰지않고 render() 을 사용
 ```
@@ -72,3 +72,11 @@ this.setState({count: this.state.count +1 }); => this.setState( current => ({ co
 > Constructor()[JS] -> render() -> componentDidMount() 
 * Updating : 업데이트 순서, setState를 사용할시.
 > render() -> componentDidUpdate()
+
+### 3. Making The Movie App
+* Data를 fetch 하는 법? **axios** 사용
+> npm i axios
+* async() / await
+> axios는 느리기 때문에 async() / await axios.get 을 사용해주어 axios가 끝날때 까지 기다린 후 componentDidMount()를 실행하게 만들어준다.
+* ERROR : Each child in a list should have a unique "key" prop.
+> id={movie.id} 에 고유한 키값이 필요, Key={movie.id} 를 추가해주면 됨.
