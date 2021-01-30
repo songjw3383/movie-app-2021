@@ -54,3 +54,19 @@ class App extends React.Component
 * Class Component Vs. Function Component
 > Function component는 function이고 뭔가를 return, 그리고 screen에 표시됨.
 > Class component는 class이고 react component로 부터 확장되어 screen에 표시됨.
+
+* Clas Component -> **State** 를 사용하기 위해서
+> State는 변경이가능한 데이터를 넣기위해 필요
+
+* this.add Vs. this.add()
+> 즉시 add함수를 실행시키고 싶으면 뒤에 ()를 붙여주고, 원할때 함수를 작동시키고 싶으면 아무것도 써주지 않으면 됨.
+
+* setState()
+> state를 직접 변경해주면 작동하지 않고, setState()를 이용해줘야 함. 그러면 setState는 새로운 state와 함께 render function을 호출하여 작동시켜줌.
+* this.state 대신 current사용
+```
+this.setState({count: this.state.count +1 }); => this.setState( current => ({ count: current.count +1});
+```
+
+* Mounting : 마운팅 순서
+> Constructor()[JS] -> render() -> componentDidMount() 
