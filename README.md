@@ -67,6 +67,8 @@ class App extends React.Component
 ```
 this.setState({count: this.state.count +1 }); => this.setState( current => ({ count: current.count +1});
 ```
-
-* Mounting : 마운팅 순서
+**Component LifeCycle**
++ Mounting : 마운팅 순서
 > Constructor()[JS] -> render() -> componentDidMount() 
+* Updating : 업데이트 순서, setState를 사용할시.
+> render() -> componentDidUpdate()
