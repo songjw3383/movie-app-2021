@@ -106,3 +106,6 @@ path="/" component={Home} /> , path="/about" compoent={About}
 > Navigation 활용. 또한 Link를 활용하고 싶으면 Router안에 넣어놔야함
 ** Link는 a href와는 다르게 새로고침이 안되게 페이지를 전환시켜주는 기술 **
 > import { Link } from "react-router-dom" 상단에 추가해줘야함
+## 결과
+![이미지 1](https://user-images.githubusercontent.com/56250064/106389774-b13e7400-6391-11eb-97a8-4637ca09757c.png)
+> css 외 수정 필요
