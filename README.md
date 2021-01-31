@@ -80,3 +80,14 @@ this.setState({count: this.state.count +1 }); => this.setState( current => ({ co
 > axios는 느리기 때문에 async() / await axios.get 을 사용해주어 axios가 끝날때 까지 기다린 후 componentDidMount()를 실행하게 만들어준다.
 * ERROR : Each child in a list should have a unique "key" prop.
 > id={movie.id} 에 고유한 키값이 필요, Key={movie.id} 를 추가해주면 됨.
+* React 내에선 component class 때문에 내부의 class를 className으로 명시해줘야함
+> div class = "movie" **==>** div className = "movie"
+
+### 4. Deploy
+* gh-pages 설치
+> npm i gh-pages
+* package.json 에 homepage 추가
+> "homepage": "https://{github username}.github.io/{repository name}",
+* npm run build -> build 폴더 생성
+* "script" 내 "deploy":"gh-pages -d build" , "predeploy": "npm run build" 추가
+* npm run deploy 실행
