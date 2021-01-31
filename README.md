@@ -3,7 +3,7 @@
 React JS Foundamentals Course
 starting 0129 ~
 
-## 0129
+## 0129 ~ 0201
 ### 1. JSX & PROPS
 * Component -> HTML 을 반환하는 함수 
 * JSX 는 React의 유일한 개념
@@ -80,3 +80,32 @@ this.setState({count: this.state.count +1 }); => this.setState( current => ({ co
 > axios는 느리기 때문에 async() / await axios.get 을 사용해주어 axios가 끝날때 까지 기다린 후 componentDidMount()를 실행하게 만들어준다.
 * ERROR : Each child in a list should have a unique "key" prop.
 > id={movie.id} 에 고유한 키값이 필요, Key={movie.id} 를 추가해주면 됨.
+* React 내에선 component class 때문에 내부의 class를 className으로 명시해줘야함
+> div class = "movie" **==>** div className = "movie"
+
+### 4. Deploy
+* gh-pages 설치
+> npm i gh-pages
+* package.json 에 homepage 추가
+> "homepage": "https://{github username}.github.io/{repository name}",
+* npm run build -> build 폴더 생성
+* "script" 내 "deploy":"gh-pages -d build" , "predeploy": "npm run build" 추가
+* npm run deploy 실행
+
+### 5.Routing
+* Navigation -> **react-router dom** 사용
+> npm install react-router-dom
+* Url rendering은 매치된것을 함께 rendering 된다
+```
+path="/" component={Home} /> , path="/about" compoent={About}
+```
+> about 페이지는 / 와 about을 함께 렌더링하게된다.
+**해결방법** : path="/" **exact={true}** component={Home} 
+> exact={true}를 추가해준다.
+* / 와 /about 둘 사이를 네비게이팅하는 법
+> Navigation 활용. 또한 Link를 활용하고 싶으면 Router안에 넣어놔야함
+** Link는 a href와는 다르게 새로고침이 안되게 페이지를 전환시켜주는 기술 **
+> import { Link } from "react-router-dom" 상단에 추가해줘야함
+## 결과
+![이미지 1](https://user-images.githubusercontent.com/56250064/106389774-b13e7400-6391-11eb-97a8-4637ca09757c.png)
+> css 외 수정 필요
