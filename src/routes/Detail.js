@@ -12,10 +12,12 @@ class Detail extends React.Component{
         const {location } = this.props;
         console.log(location)
         if (location.state) {
+            console.log(location.state)
             return (
             <div className="MovieDetail">
                 <img src={location.state.poster} alt={location.state.title} title={location.state.title} />
                 <div className="moreDetail">
+                    
                     <span className="title">{location.state.title}</span>
                     <span className="year">{location.state.year}</span>
                     <ul className="genres">{location.state.genres.map((genre,index) =>(<li key={index} className="genres__genre">{genre}</li>))}</ul>

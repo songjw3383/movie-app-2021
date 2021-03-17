@@ -10,11 +10,14 @@
   font-weight: 300;
 }
 
-.contact__container span:first-child {
-  font-size: 20px;
+.contact__container p {
+  font-size: 18px;
 }
 
-.contact__container span:last-child {
+.contact__container span {
   display: block;
   margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: oblique;
 }

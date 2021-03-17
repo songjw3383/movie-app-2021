@@ -5,12 +5,10 @@ function Contact(props){
     /*console.log(props);*/
     return (
         <div className="contact__container">
-          <span>
-            Email : xoals19958@gmail.com
-            Phone : +82 10 - 3240 - 1812
-            Instagram : jwjwjw_95
-          </span>
-          <span>remade by SONGJAEWOO</span>
+          <p>Email : xoals19958@gmail.com</p>
+          <p>Phone : +82 10 - 3240 - 1812</p>
+          <p>Instagram : jwjwjw_95</p>
+          <span>remade by SONG JAEWOO</span>
         </div>
       );
     }
