@@ -1,0 +1,58 @@
+.MovieDetail {
+  position: absolute;
+  width: 90%;
+  margin: 70px;
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.MovieDetail .moreDetail {
+  padding: 30px;
+}
+.MovieDetail img {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.MovieDetail .year {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.MovieDetail .title {
+  margin-bottom: 5px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+.MovieDetail .genres {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 20px 5px;
+}
+
+.genres li {
+  margin-right: 10px;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.MovieDetail .summary {
+  padding-top: 15px;
+  margin: 1px;
+  line-height: 30px;
+}
+
+.MovieDetail .runtime {
+  margin: 5px;
+  font-style: oblique;
+}

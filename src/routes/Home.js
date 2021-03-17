@@ -15,6 +15,7 @@ class Home extends React.Component {
         }
       } = await axios.get("https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=rating");
     this.setState({ movies, isLoading: false })
+    console.log(this)
   } 
   componentDidMount() {
     this.getMovies();  
@@ -38,6 +39,7 @@ class Home extends React.Component {
               summary={movie.summary}
               poster={movie.medium_cover_image}
               genres={movie.genres}
+              runtime={movie.runtime}
             />
           ))}
         </div>

@@ -11,7 +11,7 @@ function Navigation() {
                 <div className="block">
                 <Link to="/">Home</Link>
                 <Link to="/">Interview</Link>
-                <Link to="/">Contact</Link>
+                <Link to="/contact">Contact</Link>
                 <Link to="/about">About</Link>
                 </div>
             </li>
